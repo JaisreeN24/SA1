@@ -13,13 +13,11 @@ Personal Computer with MASM software
 1. Initialize the register AX with 5000H and load it into the DS and ES segments to set up memory for data operations.
 2. Clear the direction flag using CLD to ensure string instructions increment memory addresses.
 3. Set the source index SI to 1000H, the destination index DI to 3000H, and the counter CX to 10.
-4. Execute REP MOVSB to copy 10 bytes from the source memory to the destination memory.
-5. Update the source index SI to 2000H, the destination index DI to 1000H, and the counter CX to 10.
-6. Execute REP MOVSB to copy the next 10 bytes from the new source to the destination.
-7. Set the source index SI to 3000H, the destination index DI to 2000H, and the counter CX to 10.
-8. Execute REP MOVSB to copy the final 10-byte block from source to destination.
-9. Execute INT 3H to terminate the program and signal the end of execution.
-
+4. Execute REP MOVSB to copy 10 bytes from the source to the destination memory.
+5. Set the source index SI to 2000H, the destination index DI to 1000H, and the counter CX to 10.
+6. Execute REP MOVSB to copy the next 10 bytes from the source to the destination memory.
+7. Set the source index SI to 3000H, the destination index DI to 2000H, and the counter CX to 10, then execute REP MOVSB to copy the final 10-byte block.
+8. Execute INT 3H to terminate the program and signal the end of execution.
 ---
 ## PROGRAM
 
