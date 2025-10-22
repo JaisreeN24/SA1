@@ -48,7 +48,6 @@ REP MOVSB
 INT 3H
 CODE ENDS
 END START
-
 ```
 ---
 ## OUTPUT:
