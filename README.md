@@ -54,11 +54,11 @@ END START
 
 #### (a) Data in the memory before exchanging the data
 
-<img width="635" height="427" alt="Screenshot 2025-10-22 224207" src="https://github.com/user-attachments/assets/e336d55c-13b9-4da8-9885-c01ca162cb4a" />
+<img width="804" height="542" alt="image" src="https://github.com/user-attachments/assets/f307ba2d-8809-42bb-a60a-0ed0bdd084ea" />
 
 #### (b) Data in the memory after exchanging the data
 
-<img width="638" height="425" alt="Screenshot 2025-10-22 224319" src="https://github.com/user-attachments/assets/7c4be362-8fd2-4469-83d7-05177e3a1c94" />
+<img width="809" height="538" alt="image" src="https://github.com/user-attachments/assets/03fb9f1a-4129-4083-a9e0-801a54eed066" />
 
 ---
 
