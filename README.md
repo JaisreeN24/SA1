@@ -1,0 +1,67 @@
+
+# EXCHANGE THE CONTENTS OF TWO MEMORY BLOCKS
+
+## AIM
+To exchange the contents of two memory blocks of equal length in assembly language program in 8086.
+
+---
+## APPARATUS REQUIRED
+- Personal Computer  
+- MASM software
+
+---
+## Algorithm
+1. Initialize the register AX with 5000H and load it into the DS and ES segments to set up memory for data operations.
+2. Clear the direction flag using CLD to ensure string instructions increment memory addresses.
+3. Set the source index SI to 1000H, the destination index DI to 3000H, and the counter CX to 10.
+4. Execute REP MOVSB to copy 10 bytes from the source memory to the destination memory.
+5. Update the source index SI to 2000H, the destination index DI to 1000H, and the counter CX to 10.
+6. Execute REP MOVSB to copy the next 10 bytes from the new source to the destination.
+7. Set the source index SI to 3000H, the destination index DI to 2000H, and the counter CX to 10.
+8. Execute REP MOVSB to copy the final 10-byte block from source to destination.
+9. Execute INT 3H to terminate the program and signal the end of execution.
+
+---
+## PROGRAM
+
+```
+CODE SEGMENT
+ASSUME CS: CODE
+START: MOV AX, 5000H
+MOV DS, AX
+MOV ES, AX
+CLD
+MOV SI, 1000H
+MOV DI, 3000H
+MOV CX, 10
+REP
+MOVSB
+MOV SI, 2000H
+MOV DI, 1000H
+MOV CX, 10
+REP
+MOVSB
+MOV SI, 3000H
+MOV DI, 2000H
+MOV CX, 10
+REP MOVSB
+INT 3H
+CODE ENDS
+END START
+
+```
+---
+## OUTPUT:
+
+#### (a) Data in the memory before exchanging the data
+
+<img width="635" height="427" alt="Screenshot 2025-10-22 224207" src="https://github.com/user-attachments/assets/e336d55c-13b9-4da8-9885-c01ca162cb4a" />
+
+#### (b) Data in the memory after exchanging the data
+
+<img width="638" height="425" alt="Screenshot 2025-10-22 224319" src="https://github.com/user-attachments/assets/7c4be362-8fd2-4469-83d7-05177e3a1c94" />
+
+---
+
+## RESULT:
+Thus, the contents of two memory blocks of equal length is exchanged successfully.
