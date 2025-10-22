@@ -6,8 +6,7 @@ To exchange the contents of two memory blocks of equal length in assembly langua
 
 ---
 ## APPARATUS REQUIRED
-- Personal Computer  
-- MASM software
+Personal Computer with MASM software
 
 ---
 ## Algorithm
